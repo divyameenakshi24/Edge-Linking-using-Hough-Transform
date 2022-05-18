@@ -56,6 +56,7 @@ plt.imshow(edges1)
 ![cv2](https://user-images.githubusercontent.com/75235402/169012858-d4acbbba-d5c7-4f5e-9f8b-e4ace9d0d037.jpg)
 
 ### Display the result of Hough transform
+
 ![cv3](https://user-images.githubusercontent.com/75235402/169012890-9a94dfdd-1a8c-4ba7-90c7-6e371c2f9794.jpg)
 
 ## Result:
