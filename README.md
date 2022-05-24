@@ -26,11 +26,23 @@ Using the HoughLinesP(),detect line co-ordinates for every points in the images.
 ```Python
 
 # Read image and convert it to grayscale image
-import cv2
+import cv2 
 import numpy as np
 import matplotlib.pyplot as plt
-image1=cv2.imread('road.jpg',0)
-img= cv2.GaussianBlur(image1,(3,3),0)
+img=cv2.imread("road.jpg",0)
+img_c=cv2.imread("road.jpg",1)
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+img_c=cv2.cvtColor(img_c,cv2.COLOR_BGR2RGB)
+plt.figure(figsize=(20,20))
+plt.subplot(1,2,1)
+plt.axis("off")
+plt.title('Original image')
+plt.imshow(img_c)
+plt.subplot(1,2,2)
+plt.axis("off")
+plt.title('Gray Image')
+plt.imshow(img)
+plt.show()
 plt.imshow(img)
 # Find the edges in the image using canny detector and display
 edges1 = cv2.Canny(img,100,200)
@@ -49,7 +61,8 @@ plt.imshow(edges1)
 ## Output
 
 ### Input image and grayscale image
-![cv1](https://user-images.githubusercontent.com/75235402/169012824-2f6a703d-996e-44fc-a9c7-915b3800f4ce.jpg)
+![Screenshot 2022-05-24 104737](https://user-images.githubusercontent.com/75235402/169954493-3901b044-f991-4117-a2de-053259d90cac.jpg)
+
 
 
 ### Canny Edge detector output
