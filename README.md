@@ -8,25 +8,19 @@ Anaconda - Python 3.7
 ## Algorithm:
 ### Step1:
 Import all the necessary modules for the program.
-
 ### Step2:
 Load a image using imread() from cv2 module.
-
 ### Step3:
 Convert the image to grayscale.
-
 ### Step4:
 Using Canny operator from cv2,detect the edges of the image.
-
 ### Step5:
 Using the HoughLinesP(),detect line co-ordinates for every points in the images.Using For loop,draw the lines on the found co-ordinates.Display the image.
 
 ## Program:
-
 ### Program Developed by: A.Divya Meenakshi
 ### Register : 212220230014
 ```Python
-
 # Read image and convert it to grayscale image
 import cv2 
 import numpy as np
@@ -61,16 +55,11 @@ for line in lines:
 plt.imshow(edges1)
 ```
 ## Output
-
 ### Input image and grayscale image
 ![Screenshot 2022-05-24 104737](https://user-images.githubusercontent.com/75235402/169954493-3901b044-f991-4117-a2de-053259d90cac.jpg)
-
 ### Canny Edge detector output
 ![cv2](https://user-images.githubusercontent.com/75235402/169012858-d4acbbba-d5c7-4f5e-9f8b-e4ace9d0d037.jpg)
-
 ### Display the result of Hough transform
-
 ![cv3](https://user-images.githubusercontent.com/75235402/169012890-9a94dfdd-1a8c-4ba7-90c7-6e371c2f9794.jpg)
-
 ## Result:
 Thus the program is written with python and OpenCV to detect lines using Hough transform. 
