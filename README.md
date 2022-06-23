@@ -21,7 +21,6 @@ Using Canny operator from cv2,detect the edges of the image.
 ### Step5:
 Using the HoughLinesP(),detect line co-ordinates for every points in the images.Using For loop,draw the lines on the found co-ordinates.Display the image.
 
-
 ## Program:
 
 ### Program Developed by: A.Divya Meenakshi
@@ -65,8 +64,6 @@ plt.imshow(edges1)
 
 ### Input image and grayscale image
 ![Screenshot 2022-05-24 104737](https://user-images.githubusercontent.com/75235402/169954493-3901b044-f991-4117-a2de-053259d90cac.jpg)
-
-
 
 ### Canny Edge detector output
 ![cv2](https://user-images.githubusercontent.com/75235402/169012858-d4acbbba-d5c7-4f5e-9f8b-e4ace9d0d037.jpg)
